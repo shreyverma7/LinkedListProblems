@@ -42,6 +42,7 @@ namespace LinkedListProblem
                 head.next = temp;
             }
         }
+
         internal void Display()
         {
             Node temp = this.head;
