@@ -15,10 +15,13 @@ public class Program
          list.AddInReverseOrder(30);
          list.AddInReverseOrder(70); */
         list.InserAtParticularPosition(2, 40);
-        list.RemoveFirstNode();
-        list.RemoveLastNode();
+        // list.RemoveFirstNode();
+        //list.RemoveLastNode();
+        int num = list.Search(30);
+        Console.WriteLine("The position is "+num);
+       
 
-        list.Display();
+       // list.Display();
 
     }
 }
