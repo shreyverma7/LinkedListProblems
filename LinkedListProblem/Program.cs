@@ -16,6 +16,7 @@ public class Program
          list.AddInReverseOrder(70); */
         list.InserAtParticularPosition(2, 40);
         list.RemoveFirstNode();
+        list.RemoveLastNode();
 
         list.Display();
 
