@@ -19,9 +19,11 @@ public class Program
         //list.RemoveLastNode();
         int num = list.Search(30);
         Console.WriteLine("The position is "+num);
+        list.DeleteNodeAtParticularPosition(1);
+       
        
 
-       // list.Display();
+        list.Display();
 
     }
 }
