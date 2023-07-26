@@ -42,6 +42,32 @@ namespace LinkedListProblem
                 head.next = temp;
             }
         }
+        internal Node InserAtParticularPosition(int position, int data)
+        {
+            Node newestnode = new Node(data);
+            if (this.head == null)
+            {
+                return newestnode;
+            }
+            if (position == 0)
+            {
+                newestnode.next = this.head;
+                this.head = newestnode;
+                return this.head;
+            }
+            Node prev = null;
+            Node current = this.head;
+            int count = 0;
+            while (current != null && count < position)
+            {
+                prev = current;
+                current = current.next;
+                count++;
+            }
+            newestnode.next = prev.next;
+            prev.next = newestnode;
+            return this.head;
+        }
 
         internal void Display()
         {
